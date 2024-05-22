@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background: antiquewhite; */
+    /* background-image: linear-gradient(to right top, #780000, #923e1c, #aa683c, #c29164, #daba91, #d5c79d, #d0d4ad, #cedfc0, #a8d1bb, #85c2bc, #6db0be, #669bbc); */
+    display: flex;
+    /* background-image: linear-gradient(to right top, #f72585, #e0018d, #c40094, #a5009b, #80009f, #6a2cb1, #4b40c0, #0050cb, #0073df, #0091e9, #00aeee, #4cc9f0); */
+    justify-content: center;
+    /* background-image: linear-gradient(to top, #1d3557, #2e5973, #507e8b, #7ca3a3, #adc8bf, #adc8bf, #adc8bf, #adc8bf, #7ca3a3, #507e8b, #2e5973, #1d3557); */
+    /* background-image: linear-gradient(to top, #03045e, #4f0063, #7e0061, #a5005a, #c5004f, #c5004f, #c5004f, #c5004f, #a5005a, #7e0061, #4f0063, #03045e); */
+    /* background-image: linear-gradient(to top, #e63946, #e47143, #dd9b56, #d8bd7c, #d9daad, #c3d6b4, #b4d0bb, #adc8bf, #7ca3a3, #507e8b, #2e5973, #1d3557); */
+    background-image: linear-gradient(to right top, #e63946, #e47143, #dd9b56, #d8bd7c, #d9daad, #c3d6b4, #b4d0bb, #adc8bf, #7ca3a3, #507e8b, #2e5973, #1d3557);
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title1 {
+    font-size: 40px;
+    font-weight: 1800;
+    color: rgb(8, 6, 133);
+    letter-spacing: 1px;
+    margin: 30px 0 60px 0;
+}
+
+.todo-list1 {
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    /* background-color: #fff; */
+    
+}
+
+.listhead {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.enteredlist {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.addlist {
+    border: none;
+    border-radius: 5px;
+    background-color: #03045e;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    /* opacity: 0.6; */
+    pointer-events: none;
+}
+
+.addlist.active {
+    /* opacity: 1; */
+    pointer-events: all;
+}
+
+.task {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.item {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p {
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: 1px;
+    padding: 0 25px 0 15px;
+    font-weight: bolder;
+
+}
+
+.item.completed p {
+    text-decoration: line-through;
+    color: #11111180;
+
+}
+
+.item-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-btn i {
+    /* border: 1px black solid; */
+    /* padding: 5px; */
+    color: rgb(8, 6, 133);
+    font-size: 18px;
+    cursor: pointer;
+}
